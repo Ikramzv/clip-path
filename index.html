@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            background-color: crimson;
+            clip-path: path("M 250 0 A 100 100 0 0 0 250 500 C 125 350 125 150 250 0");
+            animation: path 3s linear infinite alternate;
+        }
+
+        @keyframes path {
+            0% {
+                clip-path: path("M 250 0 A 10 10 0 0 0 250 500 C 125 350 125 150 250 0");
+                filter: hue-rotate(36deg);
+            }
+
+            10% {
+                clip-path: path("M 250 0 A 10 10 0 0 0 250 500 C 110 300 110 200 250 0");
+                filter: hue-rotate(72deg);
+            }
+
+            20% {
+                clip-path: path("M 250 0 A 10 10 0 0 0 250 500 C 100 350 100 150 250 0");
+                filter: hue-rotate(108deg);
+            }
+
+            30% {
+                clip-path: path("M 250 0 A 10 10 0 0 0 250 500 C 90 300 90 200 250 0");
+                filter: hue-rotate(144deg);
+            }
+
+            40% {
+                clip-path: path("M 250 0 A 10 10 0 0 0 250 500 C 80 350 80 150 250 0");
+                filter: hue-rotate(180deg);
+            }
+
+            50% {
+                clip-path: path("M 250 0 A 10 10 0 0 0 250 500 C 70 300 70 200 250 0");
+                filter: hue-rotate(216deg);
+            }
+
+            60% {
+                clip-path: path("M 250 0 A 10 10 0 0 0 250 500 C 60 350 60 150 250 0");
+                filter: hue-rotate(252deg);
+            }
+
+            70% {
+                clip-path: path("M 250 0 A 10 10 0 0 0 250 500 C 50 300 50 200 250 0");
+                filter: hue-rotate(288deg);
+            }
+
+            80% {
+                clip-path: path("M 250 0 A 10 10 0 0 0 250 500 C 40 350 40 150 250 0");
+                filter: hue-rotate(324deg);
+            }
+
+            90% {
+                clip-path: path("M 250 0 A 10 10 0 0 0 250 500 C 30 300 30 200 250 0");
+                filter: hue-rotate(340deg);
+            }
+
+            100% {
+                clip-path: path("M 250 0 A 10 10 0 0 0 250 500 C 15 350 15 150 250 0");
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+    </div>
+</body>
+
+</html>
